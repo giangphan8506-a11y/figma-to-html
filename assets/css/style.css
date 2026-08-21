@@ -7,4 +7,58 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  border-radius: 24.5px;
+  background: #171100;
+}
+.main-content {
+  max-width: calc(100% - 48px);
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.header {
+  background: #fffcf4;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+a {
+  text-decoration: none;
+}
+.header .header-body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 1000; */
+  text-shadow: 1px 0 0 currentColor;
+}
+.header .btn-sign-up {
+  min-width: 144px;
+  margin-left: 49px;
 }
