@@ -44,6 +44,14 @@ body {
 a {
   text-decoration: none;
 }
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
 .header .header-body {
   display: flex;
   align-items: center;
@@ -213,4 +221,41 @@ a {
 }
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+/* POPULARrrrrrrrrrrr */
+.popular {
+  padding: 65px 0px;
+  margin-top: 135px;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-top .desc {
+  margin-right: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+.controls {
+  display: flex;
+  gap: 18px;
+}
+.popular-top .control-btn {
+  display: flex;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-vang);
+  align-items: center;
+  justify-content: center;
+  color: var(--color-vang);
+}
+.popular-top .control-btn:hover {
+  background: var(--color-vang);
+  color: #fff;
+  cursor: pointer;
 }
