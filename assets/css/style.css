@@ -1,5 +1,5 @@
 * {
-  border-sizing: border-box;
+  box-sizing: border-box;
 }
 :root {
   --font-heading: "Sen", sans-serif;
@@ -15,6 +15,7 @@ body {
 }
 .btn {
   display: inline-block;
+
   min-width: 118px;
   padding: 0 16px;
   line-height: 50px;
@@ -27,6 +28,7 @@ body {
 }
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 .main-content {
   max-width: calc(100% - 48px);
@@ -258,4 +260,69 @@ a {
   background: var(--color-vang);
   color: #fff;
   cursor: pointer;
+}
+.popular .course-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+.popular .course-item {
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e2dfda;
+}
+.popular .course-item:hover {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0 rgba(0, 0, 0, 0.05);
+}
+.popular .course-list .thumb {
+  border-radius: 12 12 0 0;
+  height: 278px;
+  width: 100%;
+  object-fit: cover;
+}
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .course-item .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.popular .rating .value {
+  margin-left: 6px;
+  color: #fea31b;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.popular .course-item .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+.popular .course-item .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.popular .course-item .btn-book {
+  border: none;
+}
+.popular .course-item .btn-book:hover {
+  background: var(--color-vang);
 }
